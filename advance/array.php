@@ -39,7 +39,18 @@ $arr3 =[ 1,4,5,'x' =>'ahihi-array3'];
 
 $arrMeg = array_merge($arr1,$arr2,$arr3);
 $arrMeg2 = [...$arr1,...$arr2,...$arr3];
-print_r($arrMeg);
-print_r($arrMeg2);
+// print_r($arrMeg);
+// print_r($arrMeg2);
+
+// Hàm array_push - Thêm một hoặc nhiều phần tử vào cuối mảng
+$arr1 = [];
+array_push($arr1,1,3,5,['ahihi'=>'Okla']);
+print_r($arr1);
 
 
+$arr2=[];
+$arr2[]=1;
+$arr2[]=3;
+$arr2[]=4;
+$arr2['kkk']='OK Baby';
+print_r($arr2);
