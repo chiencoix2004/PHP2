@@ -19,8 +19,8 @@ $array3 = [
 echo $array3[1]['age'] . PHP_EOL;
 
 $array4 = [
-    ['name'=> 'Nguyễn Văn A', 'age', 35],
-    ['name'=> 'Nguyễn Văn A', 'age', 28],
+    ['name'=> 'Nguyễn Văn A', 'age'=> 35],
+    ['name'=> 'Nguyễn Văn A', 'age'=> 28],
     [
         'name'=>'Nguyễn Văn C',
         'age'=> 96,
@@ -54,3 +54,31 @@ $arr2[]=3;
 $arr2[]=4;
 $arr2['kkk']='OK Baby';
 print_r($arr2);
+
+// Hàm in_array - Kiểm tra xem một giá trị có tồn tại trong một mảng không 
+$arr=['kkk','keke',['ok'=>'yes']];
+$need ='kkk';
+if(in_array($need,$arr)){
+    echo "Có giá trị $need trong mảng Array" .PHP_EOL;
+}else{
+    echo "Không có giá trị $need trong mảng Array" .PHP_EOL;
+}
+
+
+// Hàm explode()- Tách một chuỗi thành 1 mảng theo 1 ký tự 
+$str = 'Dịu thật là dịu';
+$arr = explode(' ',$str);
+
+echo $str . PHP_EOL;
+print_r($arr);
+
+//Hàm implode() - Gộp 1 mảng thành chuỗi theo 1 ký tự
+$str = implode('',$arr);
+echo $str . PHP_EOL;
+
+// Hàm unset() - Xóa biến or phần tử mảng 
+$arr = [1,2, 'x'=> 'Ahihi'];
+unset($arr['x']);
+print_r($arr);
+
+
