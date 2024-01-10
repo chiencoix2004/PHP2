@@ -23,3 +23,4 @@ class SinhVien //PascalCase
     $sinhVien1->name = 'Nguyễn Văn B';
     $sinhVien1->dob = new Datetime( '2004-06-26' );
     print_r( $sinhVien1 );
+    //hello
