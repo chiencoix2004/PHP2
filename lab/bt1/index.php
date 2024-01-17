@@ -1,16 +1,16 @@
 <?php
-require_once ("ShapeInterface.php");
-require_once ("AbstractShape.php");
-require_once ("Circle.php");
-require_once ("Rectangle.php");
-require_once ("Triangle.php");
-echo "<pre>";
+require_once ( 'ShapeInterface.php' );
+require_once ( 'ShapeAbstract.php' );
+require_once ( 'Circle.php' );
+require_once ( 'Rectangle.php' );
+require_once ( 'Triangle.php' );
+echo '<pre>';
 
-$circle = new Circle('Hình tròn', 5);
-echo $circle->getName() . " Diện Tích: " . ceil($circle->calculateArea()) . ", Chu Vi: " . ceil($circle->calculatePerimeter()) . "\n";
+$circle = new Circle( 'Hình tròn', 5 );
+print_r(  $circle->getName() . ' Diện Tích: ' . ceil( $circle->calculateArea() ) . ', Chu Vi: ' . ceil( $circle->calculatePerimeter() ) . '\n');
 
-$rectangle = new Rectangle('Diện Tích', 5, 10);
-echo $rectangle->getName() . " area: " . $rectangle->calculateArea() . ", Chu Vi: " . $rectangle->calculatePerimeter() . "\n";
+$rectangle = new Rectangle( 'Hình Chữ Nhật', 5, 10 );
+print_r(  $rectangle->getName() . ' Diện Tích: ' . $rectangle->calculateArea() . ', Chu Vi: ' . $rectangle->calculatePerimeter() . '\n');
 
-$triangle = new Triangle('Diện Tích', 3, 4, 5);
-echo $triangle->getName() . " area: " . $triangle->calculateArea() . ", Chu Vi: " . $triangle->calculatePerimeter() . "\n";
+$triangle = new Triangle( 'Hình Tam Giác', 3, 4, 5 );
+print_r( $triangle->getName() . ' Diện Tích: ' . $triangle->calculateArea() . ', Chu Vi: ' . $triangle->calculatePerimeter());

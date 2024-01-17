@@ -11,9 +11,9 @@ abstract class OnLaneAbstract{
     }
     abstract public function tangToc();
 
-    public function bamCoi(){
-        echo 'Xe đang bấm còi'. __CLASS__;
-    }
+    // public function bamCoi(){
+    //     echo 'Xe đang bấm còi'. __CLASS__;
+    // }
     
    
 }
